@@ -244,6 +244,7 @@ static bool RayTraceScene(const Scene *scene, Ray ray, HitRecord *hit)
             return true;
 
         Point3f p = ray.o + ray.d * closestT;
+        
 
         switch (geometryType) {
             case GEOMETRY_TYPE_SPHERE: {
